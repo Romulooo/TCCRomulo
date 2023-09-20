@@ -1,0 +1,300 @@
+/* Color Theme Swatches in Hex */
+.Copy-of-Summers-end-1-hex { color: #F2D022; }
+.Copy-of-Summers-end-2-hex { color: #F28705; }
+.Copy-of-Summers-end-3-hex { color: #F25C05; }
+.Copy-of-Summers-end-4-hex { color: #BF1304; }
+.Copy-of-Summers-end-5-hex { color: #0D0D0D; }
+
+/* Estilos para dispositivos móveis (largura máxima de 767px) */
+a{
+  color: #0D0D0D;
+  text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  margin-top: -9vw; /* Reduzi o valor para dispositivos móveis */
+  font-size: 7vw; /* Ajustado para dispositivos móveis */
+  padding: 0 3%; /* Ajustado para dispositivos móveis */
+  width: 100%; /* Alterado para 100% para dispositivos móveis */
+  text-align: center;
+}
+
+h2 {
+  font-size: 5vw; /* Ajustado para dispositivos móveis */
+  text-align: center;
+}
+
+p {
+  font-size: 3vw; /* Ajustado para dispositivos móveis */
+}
+  
+.navbar{
+  top:0;  
+  background-color: #BF1304;
+  height: 12vw; /* Ajustado para dispositivos móveis */
+  width: 100%;
+  position:fixed;
+  z-index: 1000;
+}
+
+.menu{
+  padding: 0 3%;
+  margin-top: 2vw;
+  height: 70%; /* Ajustado para dispositivos móveis */
+  transition: ease-in-out 0.25s;
+}
+.menu:hover{
+  transform: rotate(90deg);
+}
+
+.perfil{
+  float:right;
+  margin-top: -14vw; /* Ajustado para dispositivos móveis */
+  height: 80%;
+}
+.perfil:hover{
+  transform: scale(1.2);
+}
+
+.pesquisa_div{
+  display: flex;
+}
+
+.pesquisa{
+  width: 100%; /* Ajustado para dispositivos móveis */
+  background-color: rgb(255, 255, 255);
+  margin-top: 12vw; /* Ajustado para dispositivos móveis */
+  height: 8.2vw; /* Ajustado para dispositivos móveis */
+  font-size: 4vw; /* Ajustado para dispositivos móveis */
+  border-style: solid;
+  border-width: 1vw;
+  border-color: rgb(0, 0, 0);
+  border-left: 0;
+  border-right: 0;
+}
+.pesquisa:focus {
+    outline: none;
+}
+
+.pesquisa_botão{
+  margin-top: 12vw; /* Ajustado para dispositivos móveis */
+  float: right;
+  width: auto; /* Ajustado para dispositivos móveis */
+  height: 8.8vw; /* Ajustado para dispositivos móveis */
+  border-width: 1vw;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+}
+.pesquisa_botão:hover{
+  animation: fade 1s ease-in-out;
+}
+
+/*NAVLATERAL ---------------------------------------------------------------- */
+.navlateral{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 12vw; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 2vw; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.navlateral a{
+    padding: 2vw 2vw 2vw 8vw;
+    text-decoration: none;
+    font-size: 8vw;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.navlateral a:hover{
+  background-color: #BF1304;
+}
+
+.sidenav .fecharnavlateral{
+    position: absolute;
+    top: 0;
+    right: 2vw;
+    font-size: 8vw;
+    margin-left: 10vw;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0vw;
+}
+
+/*CARROSSEL ---------------------------------------------------------------- */
+.carrossel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border-style: solid;
+    border-top: none;
+    height: 39.5vw;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #BF1304;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: black;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.791);
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+  
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
+
+/* Container geral */
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+/*DESTAQUES DO MÊS ---------------------------------------------------------------- */
+.destaques{
+  text-align: center;
+  display: flex;
+  columns: 2;
+}
+
+/*MAIS VENDIDOS ---------------------------------------------------------------- */
+.mais_vendidos{
+  text-align: center;
+  display: flex;
+  columns: 2;
+}
+
+/* GUITARRAS */
+.guitarras{
+  text-align: center;
+}
+
+/* PRODUTO */
+.produto {
+  margin: 1%;
+  border: 1px solid #ccc; 
+  box-sizing: border-box; /* Garante que a borda não aumente a largura do produto */
+  display: inline-block;
+}
+
+/* Estilo para a imagem dentro do produto */
+.produto img {
+  max-width: 100%; /* A imagem se ajustará automaticamente à largura do contêiner */
+  height: auto; /* A altura da imagem será ajustada automaticamente */
+}
+
+.destaques, .mais_vendidos, .guitarras, .baixos, .acústicos, .teclados, .escaletas, .amplificadores {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os produtos quebrem para a próxima linha */
+}
+
+.destaques .produto, .mais_vendidos .produto, .guitarras .produto, .baixos .produto, .acústicos .produto, .teclados .produto, .escaletas .produto, .amplificadores .produto {
+  width: 48%; /* Produtos ocupam 100% da largura do contêiner */
+}
+
+@media screen and (min-width: 768px) {
+  /* Estilos para tablets e dispositivos maiores */
+  /* Você pode adicionar regras para dispositivos maiores aqui */
+  h1{
+    margin-top: -11vh;
+    margin-left: -15vw;
+    font-size: 4em;
+    width: 130vw;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  p{
+    font-size: 4vw;
+  }
+
+  .perfil{
+    float:right;
+    margin-top: -22vh;
+    height: 90%;
+  }
+
+  .pesquisa{
+    background-color: rgb(255, 255, 255);
+    margin-top: 16vh;
+    height: 10vw;
+    font-size: 8vw;
+  }
+
+  .pesquisa_botão{
+    margin-top: 16vh;
+    float: right;
+    width: auto;
+    height: 22.5vh;
+  }
+
+  .navlateral a{
+    font-size: 3vw;
+  }
+}
+
+.tituloSG .tituloPerfil{
+  margin-top: 1vw;
+  font-size: 5vw;
+  width: 90vw;
+}
+
+.imagemSG{
+  margin-left: 10vw;
+  border: solid;
+}
+
+.descriçãoSG{
+  font-size: 5vw;
+  width: 90vw;
+  margin-left: 5vw;
+}
